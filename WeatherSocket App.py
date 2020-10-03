@@ -81,8 +81,8 @@ async def echo(websocket, path):
                     wind_angle = onecallJSON["current"]["wind_deg"]
                     city = onecallJSON["city"]
                 except:
-                    await websocket.send("You didn't click \"Get Weather!\" first. Please click \"Get Weather!\"")
-                    print (get_time(),"Get Weather wasn't pushed first! This won't work until then")
+                    await websocket.send("You either entered an invalid city or didn't click \"Get Weather!\" first. Please follow the city format and then click \"Get Weather!\"")
+                    print (get_time(),"Get Weather wasn't pushed first or there was an invalid city!")
                     continue
                 
 
@@ -108,8 +108,8 @@ async def echo(websocket, path):
                     current_day = date.fromtimestamp(onecallJSON["current"]["dt"]).strftime("%A")
                     # The UNIX epoch time code is provided inside each day, so this code returns the day of the week you see ingame.
                 except:
-                    await websocket.send("You didn't click \"Get Weather!\" first. Please click \"Get Weather!\"")
-                    print (get_time(),"Get Weather wasn't pushed first! This won't work until then")
+                    await websocket.send("You either entered an invalid city or didn't click \"Get Weather!\" first. Please follow the city format and then click \"Get Weather!\"")
+                    print (get_time(),"Get Weather wasn't pushed first or there was an invalid city!")
                     continue
 
                 temp = onecallJSON["daily"][0]["temp"]
@@ -149,8 +149,8 @@ async def echo(websocket, path):
                     current_day_UNIX = dailyJSON["dt"]
                     current_day = date.fromtimestamp(current_day_UNIX).strftime("%A")
                 except:
-                    await websocket.send("You didn't click \"Get Weather!\" first. Please click \"Get Weather!\"")
-                    print (get_time(),"Get Weather wasn't pushed first! This won't work until then")
+                    await websocket.send("You either entered an invalid city or didn't click \"Get Weather!\" first. Please follow the city format and then click \"Get Weather!\"")
+                    print (get_time(),"Get Weather wasn't pushed first or there was an invalid city!")
                     day_count = 0
                     continue
 
@@ -192,8 +192,8 @@ async def echo(websocket, path):
                     current_day_UNIX = dailyJSON["dt"]
                     current_day = date.fromtimestamp(current_day_UNIX).strftime("%A")
                 except:
-                    await websocket.send("You didn't click \"Get Weather!\" first. Please click \"Get Weather!\"")
-                    print (get_time(),"Get Weather wasn't pushed first! This won't work until then")
+                    await websocket.send("You either entered an invalid city or didn't click \"Get Weather!\" first. Please follow the city format and then click \"Get Weather!\"")
+                    print (get_time(),"Get Weather wasn't pushed first or there was an invalid city!")
                     day_count = 0
                     continue
                 
