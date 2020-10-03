@@ -25,8 +25,6 @@ async def echo(websocket, path):
         time = datetime.now().strftime("[%d/%m/%Y %H:%M:%S]:")
         return time
     def getWindDir(wind_angle): 
-        # print ("I GOT HERE", wind_angle)
-        # print (onecallJSON)
         # The API gives the wind direction as an angle, and writes the cardinal direction to wind_direction
         if wind_angle >= 0 and wind_angle <= 22.5:
             wind_direction = "North"
