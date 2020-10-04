@@ -36,7 +36,7 @@ You now have the server side of WeatherSocket setup to your liking. You'll notic
 
 * Step 4, Setting it up in Neos:
 
-All you need to do to get your instance working is click "Show logix" on either the world integration demo or the weather app (or both). Enter your username where it says "You!". For the app, you will have to click "Connect to WeatherSocket" to get it working, but after that, you're golden! You can disable the "Show Logix" button and then save a copy for yourself. For the demo, simply plug whatever you want to control into the appropriate outputs that're neatly organized below the inputs. You are also able to change how often it checks for new weather information. I wouldn't recommend setting it lower than 3 seconds if you plan to run it 24/7.
+All you need to do to get your instance working is click "Show logix" on either the world integration demo or the weather app (or both). Enter your username where it says "You!". For the app, you will have to click "Connect to WeatherSocket" to get it working, but after that, you're golden! You can disable the "Show Logix" button and then save a copy for yourself. For the demo, simply plug in your name, city, and how often you want it to check into the appropriate inputs that're neatly organized above the outputs. You are also able to change how often it checks for new weather information. I wouldn't recommend setting it lower than 3 seconds if you plan to run it 24/7.
 
 You're done! There are some extra things you can do now, however everything is already set up for most use cases.
 

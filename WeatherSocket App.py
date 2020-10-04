@@ -235,7 +235,7 @@ async def echo(websocket, path):
                     print(get_time(),"Success!")
                     onecallJSON = result
                     await websocket.send("Loading accurate weather data...")
-                    for i in range(random.randint(3,7)):
+                    for i in range(random.randint(7,8)):
                         time.sleep(1)
                 else: 
                     await websocket.send("Invalid city.\nPlease enter a city name in the style City,State/Province (optional),Country. Ex: Sacramento,California,United States / Sacramento,ca,us")
